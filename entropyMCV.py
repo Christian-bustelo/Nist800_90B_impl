@@ -35,7 +35,7 @@ def data_collection():
     print("-----------------------------------------------")
 
     ######################################
-    # PETICION QRNG DE 1000000 de entradas
+    # PETICION DE 1000000 de entradas
     ######################################
 
     # Seccion mockeada #
@@ -194,6 +194,7 @@ def restart_test(h_i):
     #   valores = tu_funcion()
     #   matrix[i, :] = valores 
     #   close de la conexion
+    #   pasar los valores de la matriz a 8 bits
     #   tiempo de espera de para otra conexion
 
     # Mockeo    

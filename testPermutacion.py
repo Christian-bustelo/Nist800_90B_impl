@@ -1,3 +1,10 @@
+#---------------------------------------------------------------------------------------------------------------------------#
+# Implementacion de los test de descarte de la hipotesis de IID para los calculos con datos de NIST SP800-90B
+# Se implementaran un total de 7 test para corraborar la hipotesis
+# Autor: [Christian Bustelo] - [HPCNOW!]
+# Fecha: [27/08/20023]
+#---------------------------------------------------------------------------------------------------------------------------#
+
 # Number of Directional Runs test statistic function
 def calculate_directional_runs(S_prime):
     #print(S_prime)
@@ -9,6 +16,7 @@ def calculate_directional_runs(S_prime):
 
     return T
 
+#---------------------------------------------------------------------------------------------------------------------------#
 
 # Length of Longest Directional Run test statistic function
 def calculate_length_of_longest_directional_run(S_prime):
@@ -24,7 +32,7 @@ def calculate_length_of_longest_directional_run(S_prime):
 
     return max_run_length
 
-
+#---------------------------------------------------------------------------------------------------------------------------#
 
 # Number of Increases and Decreases test statistic function
 def calculate_number_of_increases_decreases(S_prime):
@@ -33,6 +41,8 @@ def calculate_number_of_increases_decreases(S_prime):
     T = max(num_increases, num_decreases)
 
     return T
+
+#---------------------------------------------------------------------------------------------------------------------------#
 
 # Number of Runs Based on the Median test statistic function
 def calculate_number_of_runs_median(data):
@@ -46,6 +56,7 @@ def calculate_number_of_runs_median(data):
 
     return T
 
+#---------------------------------------------------------------------------------------------------------------------------#
 
 # Length of Runs Based on Median test statistic function
 def calculate_length_of_runs_median(data):
@@ -63,6 +74,7 @@ def calculate_length_of_runs_median(data):
 
     return max_run_length
 
+#---------------------------------------------------------------------------------------------------------------------------#
 
 def calculate_average_collision(data):
     C = []  # List to store the number of samples observed to find two occurrences of the same value
@@ -87,6 +99,7 @@ def calculate_average_collision(data):
 
     return T
 
+#---------------------------------------------------------------------------------------------------------------------------#
 
 def calculate_max_collision(data):
     C = []  # List to store the number of samples observed to find two occurrences of the same value
@@ -110,3 +123,5 @@ def calculate_max_collision(data):
     T = max(C)
 
     return T
+
+#---------------------------------------------------------------------------------------------------------------------------#
