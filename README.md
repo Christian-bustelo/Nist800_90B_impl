@@ -11,3 +11,5 @@ To the use you can run the code whit two options:
 "-v" : This will allow you to see inter media data in the executions of the test as the initial entropy estimations or the Sanity Check results in the Restart Test.
 
 "--no-test" : This option is used when you wanna skip Restart Test, in this case we only apply the validation of the IID hypothesis and then the calculus of the entropy.
+
+![EstructuraTest](https://github.com/Christian-bustelo/Nist800_90B_impl/assets/137056718/7a09a14e-da0f-4a6d-ab53-1ebc040c57ae)
