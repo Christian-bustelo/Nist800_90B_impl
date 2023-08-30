@@ -38,7 +38,7 @@ def data_collection():
     # PETICION DE 1000000 de entradas
     ######################################
 
-    # Seccion mockeada #
+    # Mocked #
     file_path = "/home/cbustelo/Desktop/Proyectos/Cesga_QRNG/800_90B/cesga-qrng/small_output.txt" #Salida de pruebas validas
     with open(file_path, "r") as file:
         lines = file.readlines()
@@ -197,7 +197,7 @@ def restart_test(h_i):
     #   pasar los valores de la matriz a 8 bits
     #   tiempo de espera de para otra conexion
 
-    # Mockeo    
+    # Mocked    
     matrix = np.random.randint(0, 2**8, size=(x_count, y_count), dtype=np.uint8)
 
     ##################################################
